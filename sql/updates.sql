@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS updates (
+  update_id SERIAL,
+  version_number FLOAT NULL,
+  title VARCHAR(255) DEFAULT NULL,
+  content text,
+  url VARCHAR(255) DEFAULT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (update_id)
+);
+

@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS pokedex (
+  pokemon_id INT,
+  name VARCHAR(255) DEFAULT NULL,
+  content text,
+  type1 VARCHAR(255) DEFAULT NULL,
+  type2 VARCHAR(255) DEFAULT NULL,
+  total INT DEFAULT NULL,
+  hp INT DEFAULT NULL,
+  attack INT DEFAULT NULL,
+  defense INT DEFAULT NULL,
+  sp_attack INT DEFAULT NULL,
+  sp_defense INT DEFAULT NULL,
+  speed INT DEFAULT NULL,
+  img_url VARCHAR(255) DEFAULT NULL,
+  sprit_url VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY (pokemon_id)
+);
