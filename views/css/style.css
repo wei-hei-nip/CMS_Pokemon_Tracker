@@ -1,0 +1,305 @@
+/* We set the main HTML body properties */
+body {
+    font-family: Tahoma;
+    font-size: 16px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* We set our main header properties */
+h1 {
+    text-align: center;
+    color: #222222;
+    text-shadow: 3px 3px 3px #bbbbbb;
+}
+
+/* We set our secondary headers properties when these contain links */
+h2 a {
+    color: #be0417;
+    text-decoration: none;
+}
+
+/* We set our secondary headers properties when mouse is over links */
+h2 a:hover {
+    color: #770016;
+}
+
+/* Some styles for our footer */
+footer {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* We want the contents in our navigational bar to be centred */
+nav {
+    text-align: center;
+}
+
+/* We do not want the default style for the elements of our list within our navigational bar */
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+/* Each point of our list should be horizontally placed */
+nav li {
+    float: left;
+    margin-right: 15px;
+}
+
+/* We set the properties for the links within the points of our list */
+nav a {
+    background: #be0417;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 0;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* We style the mouseover properties for the links within the points of our list */
+nav a:hover {
+    background: #f69fab;
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+/* We set the style for our user bar */
+#user-bar {
+    background-color: #c7c7c7;
+    color: #000000;
+    padding: 10px;
+    text-align: right;
+}
+
+/* Styles for updates view (update.php)*/
+    /* style for update announcements row */
+    .update-box {
+        border-top: 1px solid black;
+        padding-bottom: 10px;
+    }
+    /* style for update announcements table */
+    .update-table{
+        width: 100%;
+    } 
+
+/* Styles for users table (user/user-setting/user-community.php)*/
+    /* style for users table */
+    #userTable {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    /* style for users cells for each row */
+    #userTable th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    /* style for users head row */
+    #userTable th {
+        background-color: #f2f2f2;
+    }
+
+/* Styles for pokedex view (pokedex.php)*/
+    /* style for pokedex grid */
+    #pokedex-grid {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* style for pokedex container */
+    .pokedex-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0;
+    padding: 10px;
+    }
+
+    /* style for each pokemon box in pokedex */
+    .pokedex-box {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: 0.5px solid grey; 
+    box-sizing: border-box; 
+    }
+
+    /* style for text in each box*/
+    .pokemon-info{
+    color: black;
+    text-decoration: none;
+    }
+
+    /* style for pokeball overlay icon */
+    .pokedex-pokeball-overlay {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    }
+    /* red pokeball for the logged users's pokedex */
+    .red-pokeball{
+      background-image: url('../images/pokeball-red.svg'); /* Replace with the path to pokeball icon */
+    }
+    /* blue pokeball for viewing other users' pokedex */
+    .blue-pokeball{
+      background-image: url('../images/pokeball-blue.png'); /* Replace with the path to pokeball icon */
+    }
+    /* style of image in each box */
+    .pokemon-sprit{
+        width:100px;
+      }
+
+/* Styles for pokemon view (pokemon.php)*/
+    /* style for main pokemon image container*/
+    .img-container{
+        text-align: center;
+        padding: 30px;
+    }
+    /* style for main pokemon image*/
+    .pokemon-image{
+        width: 30%;
+        height: 30%;
+    }
+    /* style for pokemon stats table*/
+    .stats-table {
+        width: 70%;
+        border-collapse: collapse;
+    }
+    /* style for pokemon stats table cells*/
+    .stats-table th,
+    .stats-table td {
+        text-align: left;
+        border-bottom: 1px solid lightgrey;
+    }
+    /* style for pokemon stats bar*/
+    .stats-bar {
+        width: 400px;
+        height: 20px;
+        background-color: lightblue;
+    }
+    /* style for the filling of the pokemon stats table*/
+    .stats-bar-fill {
+        height: 100%;
+        background-color: green;
+    }
+    /* style for the type container*/
+    .type-container{
+        text-align: center;
+    }
+    /* style for the type box*/
+    .typebox{
+        display: inline-block;
+        width: 66px;
+        margin-bottom: 4px;
+        background: #dbdbdb;
+        border: 1px solid #a3a3a3;
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, .2);
+        color: #fff;
+        font-size: .75rem;
+        font-weight: normal;
+        line-height: 1.5rem;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
+        transition: opacity .4s;
+    }
+    /* different colour of typpe box according to the type*/
+    .type-bug{
+        background-color: #94BC4A;
+    }
+    .type-dark{
+        background-color: #736C75;
+    }
+    .type-dragon{
+        background-color: #6A7BAF;
+    }
+    .type-electric{
+        background-color: #E5C531;
+    }
+    .type-fairy{
+        background-color: #E397D1;
+    }
+    .type-fighting{
+        background-color: #CB5F48;
+    }
+    .type-fire{
+        background-color: #EA7A3C;
+    }
+    .type-flying{
+        background-color: #7DA6DE;
+    }
+    .type-ghost{
+        background-color: #846AB6;
+    }
+    .type-grass{
+        background-color: #71C558;
+    }
+    .type-ground{
+        background-color: #CC9F4F;
+    }
+    .type-ice{
+        background-color: #70CBD4;
+    }
+    .type-normal{
+        background-color: #AAB09F;
+    }
+    .type-poison{
+        background-color: #B468B7;
+    }
+    .type-psychic{
+        background-color: #E5709B;
+    }
+    .type-rock{
+        background-color: #B2A061;
+    }
+    .type-steel{
+        background-color: #89A1B0;
+    }
+    .type-water{
+        background-color: #539AE2;
+    }
+    /* style for pokemon catch status container*/
+    .catch-container {
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    width: 300px; 
+    height: 100px; 
+    }
+    /* different colour for different caught status*/
+    .caught {
+    background-color: lightgreen;
+    }
+    .notcaught {
+    background-color: lightgrey;
+    }
+    /* style of link of pokemon catch status container*/
+    .catch-container-a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    line-height: 1.5;
+    width: 300px; 
+    height: 100px; 
+    }
+    /* style of pokeball icon for caught pokemon, see .red-pokeball{} for image url*/
+    .catch-container-pokeball-overlay {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 75%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 1;
+      }
