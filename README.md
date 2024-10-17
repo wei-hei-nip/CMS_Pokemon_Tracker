@@ -1,6 +1,6 @@
 # CMS_Pokemon_Tracker
 
-Info in StudyDoc
+Detailed reports in StudyDoc
 
 Snapshots of Web
 
